@@ -1,0 +1,17 @@
+{
+  "name": "product-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Valodzka",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^9.0.1",
+    "jest": "^27.1.0",
+    "serverless-webpack": "^5.5.2",
+    "webpack": "^5.51.1"
+  }
+}
