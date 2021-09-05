@@ -173,7 +173,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/product-service/dev/1630257164506-2021-08-29T17:12:44.506Z/hello.zip"
+          "S3Key": "serverless/product-service/dev/1630839447294-2021-09-05T10:57:27.294Z/hello.zip"
         },
         "Handler": "handler.hello",
         "Runtime": "nodejs14.x",
@@ -198,7 +198,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/product-service/dev/1630257164506-2021-08-29T17:12:44.506Z/getProductsList.zip"
+          "S3Key": "serverless/product-service/dev/1630839447294-2021-09-05T10:57:27.294Z/getProductsList.zip"
         },
         "Handler": "lambdas/getProductsList.handler",
         "Runtime": "nodejs14.x",
@@ -223,7 +223,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/product-service/dev/1630257164506-2021-08-29T17:12:44.506Z/getProductsById.zip"
+          "S3Key": "serverless/product-service/dev/1630839447294-2021-09-05T10:57:27.294Z/getProductsById.zip"
         },
         "Handler": "lambdas/getProductsById.handler",
         "Runtime": "nodejs14.x",
@@ -241,34 +241,34 @@
         "GetProductsByIdLogGroup"
       ]
     },
-    "HelloLambdaVersionzIPOHlCbGbwYDWvEvs3TsZsvGKMzAbz1mtOSjFBuBE": {
+    "HelloLambdaVersionVpU6ALgjIouQnslfqgV3yu3vrAXrxdAvEKoQyBDJeUo": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "HelloLambdaFunction"
         },
-        "CodeSha256": "cLdBH7TZk/l+HDkuam1R209bXS4AEh6bkvHVPJiPvQw="
+        "CodeSha256": "GUDClL/oO84F+uy5DYPmXmNr8cxJRB4te3cwGHGR6GI="
       }
     },
-    "GetProductsListLambdaVersionwW69dLgw9v8LTe0G0TVc6FEBYZPvIWwlC0vbvkrfou8": {
+    "GetProductsListLambdaVersionwSjnT8BwMHaS1D97WYGIWzPxa1IhJ0CtZVmryyiI": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetProductsListLambdaFunction"
         },
-        "CodeSha256": "18CTbtUChR/Nlbrd0Rl60+E8oJqQbRa97sYhHFSQwGU="
+        "CodeSha256": "CUNqDwFEg3ZNxn1JTe3UxN7PT04x4l9qezd95RsTjXQ="
       }
     },
-    "GetProductsByIdLambdaVersionQhugve04hwQ4agwMEPOhy501JHdbR8XKqo3iS90khM": {
+    "GetProductsByIdLambdaVersion6SpWJZ7iAyOA1VgMSpUmK4uUU5UbGIKh9GBfA9410": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetProductsByIdLambdaFunction"
         },
-        "CodeSha256": "2UZAql8wiPXqtxDDDpYnckQdHgz4ZaafQAmvEq27MhU="
+        "CodeSha256": "ZV9HHE4JFkHhmxv1ssRbTyqBlWr/2a9L/Dhdmsytg20="
       }
     },
     "ApiGatewayRestApi": {
@@ -598,7 +598,7 @@
         "GetProductsByIdLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1630257138240": {
+    "ApiGatewayDeployment1630839434219": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -739,7 +739,7 @@
     "HelloLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "HelloLambdaVersionzIPOHlCbGbwYDWvEvs3TsZsvGKMzAbz1mtOSjFBuBE"
+        "Ref": "HelloLambdaVersionVpU6ALgjIouQnslfqgV3yu3vrAXrxdAvEKoQyBDJeUo"
       },
       "Export": {
         "Name": "sls-product-service-dev-HelloLambdaFunctionQualifiedArn"
@@ -748,7 +748,7 @@
     "GetProductsListLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetProductsListLambdaVersionwW69dLgw9v8LTe0G0TVc6FEBYZPvIWwlC0vbvkrfou8"
+        "Ref": "GetProductsListLambdaVersionwSjnT8BwMHaS1D97WYGIWzPxa1IhJ0CtZVmryyiI"
       },
       "Export": {
         "Name": "sls-product-service-dev-GetProductsListLambdaFunctionQualifiedArn"
@@ -757,7 +757,7 @@
     "GetProductsByIdLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetProductsByIdLambdaVersionQhugve04hwQ4agwMEPOhy501JHdbR8XKqo3iS90khM"
+        "Ref": "GetProductsByIdLambdaVersion6SpWJZ7iAyOA1VgMSpUmK4uUU5UbGIKh9GBfA9410"
       },
       "Export": {
         "Name": "sls-product-service-dev-GetProductsByIdLambdaFunctionQualifiedArn"

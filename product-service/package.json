@@ -9,9 +9,10 @@
   "author": "Valodzka",
   "license": "ISC",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.15.4",
     "copy-webpack-plugin": "^9.0.1",
     "jest": "^27.1.0",
-    "serverless-webpack": "^5.5.2",
+    "serverless-webpack": "^5.5.3",
     "webpack": "^5.51.1"
   }
 }
