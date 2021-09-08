@@ -10,7 +10,7 @@ export const handler = async event => {
   try {
     const { title, description, price, count } = JSON.parse(event.body);
     const notAllParams = !title || !description || !price  || !count;
-
+    const wrongTypes = typeof title === "string" && typeof description === "string" && typeof price === "number" && typeof count === "number";
     if (notAllParams) {
       return {
         headers: {
@@ -20,6 +20,17 @@ export const handler = async event => {
               },
             statusCode: 400,
             body: JSON.stringify({ message: 'lack params' })
+        };
+    }
+    if (!wrongTypes) {
+        return {
+            headers: {
+                    'Content-Type': 'application/json',
+                    'Access-Control-Allow-Methods': '*',
+                    'Access-Control-Allow-Origin': '*',
+                },
+            statusCode: 400,
+            body: JSON.stringify({ message: 'wrong types' })
         };
     }
 

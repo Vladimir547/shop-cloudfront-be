@@ -31,7 +31,7 @@ export const handler = async (event) => {
                 'Access-Control-Allow-Methods': '*',
                 'Access-Control-Allow-Origin': '*',
               },
-            statusCode: 404,
+            statusCode: 500,
             body: JSON.stringify({ message: error.message })
         };
     } finally {
